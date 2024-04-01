@@ -1,7 +1,7 @@
 {
   "name": "astro-plyr",
   "version": "1.0.0",
-  "description": "A astro component template",
+  "description": "Plyr component for Astro",
   "type": "module",
   "exports": {
     ".": "./index.ts"
