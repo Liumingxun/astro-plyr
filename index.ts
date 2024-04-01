@@ -7,4 +7,6 @@
 // @ts-expect-error
 import Component from './src/Component.astro';
 
+export type { SourceInfo, Options } from 'plyr'
+
 export default Component;
