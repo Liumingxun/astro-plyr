@@ -1,0 +1,27 @@
+---
+import type { Options, SourceInfo } from 'plyr';
+
+export type Props = {
+	source: SourceInfo;
+	options: Options;
+	crossorigin?: 'anonymous' | 'use-credentials';
+};
+
+const { source, options, crossorigin = 'anonymous' } = Astro.props;
+---
+
+<script>
+	import Plyr from 'plyr';
+	import 'plyr/dist/plyr.css';
+
+	const plyrEl = document.getElementById('plyr');
+	const player = new Plyr(plyrEl);
+	const source = plyrEl.dataset.plyrSource;
+	console.log(source);
+	player.source = JSON.parse(source);
+</script>
+<video
+	id="plyr"
+	data-plyr-config={JSON.stringify(options)}
+	data-plyr-source={JSON.stringify(source)}
+	crossorigin={crossorigin}></video>
