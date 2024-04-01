@@ -1,6 +1,6 @@
 {
   "name": "astro-plyr",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A astro component template",
   "type": "module",
   "exports": {
@@ -10,8 +10,10 @@
     "src",
     "index.ts"
   ],
+  "types": "./src/types.ts",
   "keywords": [
     "astro-component",
+    "withastro",
     "plyr",
     "media-player"
   ],
@@ -25,7 +27,7 @@
     "@types/node": "^18.7.18",
     "@types/prettier": "^2.7.0",
     "@typescript-eslint/parser": "^5.58.0",
-    "astro": "^2.3.0",
+    "astro": "^4.5.12",
     "eslint": "^8.23.1",
     "eslint-plugin-astro": "^0.26.1",
     "prettier": "^2.7.1",
@@ -33,7 +35,8 @@
     "typescript": "latest"
   },
   "peerDependencies": {
-    "astro": "^2.3.0"
+    "astro": "*",
+    "plyr": "^3.7.8"
   },
   "dependencies": {
     "plyr": "^3.7.8"
