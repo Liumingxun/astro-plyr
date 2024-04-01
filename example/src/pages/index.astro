@@ -1,0 +1,54 @@
+---
+import type { Options, SourceInfo } from 'plyr';
+import Layout from '../layouts/Layout.astro';
+import Component from '~';
+
+const source: SourceInfo = {
+	type: 'video',
+	title: 'Example title',
+	poster: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg',
+	sources: [
+		{
+			src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4',
+			type: 'video/mp4',
+			size: 576,
+		},
+		{
+			src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4',
+			type: 'video/mp4',
+			size: 720,
+		},
+	],
+	tracks: [
+		{
+			kind: 'captions',
+			label: 'English',
+			srcLang: 'en',
+			src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt',
+			default: true,
+		},
+		{
+			kind: 'captions',
+			label: 'French',
+			srcLang: 'fr',
+			src: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt',
+		},
+	],
+};
+
+const options: Options = {
+	debug: true,
+};
+---
+
+<Layout title="Welcome to Astro.">
+	<Component options={options} source={source} />
+</Layout>
+
+<style>
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+</style>
