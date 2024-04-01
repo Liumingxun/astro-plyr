@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Plyr component for Astro",
   "type": "module",
+  "author": {
+    "email": "liumingxun@yeah.net",
+    "name": "luoming",
+    "url": "https://blog.luoming.space"
+  },
   "exports": {
     ".": "./index.ts"
   },
