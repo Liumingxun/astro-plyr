@@ -14,14 +14,14 @@ const { source, options, crossorigin = 'anonymous' } = Astro.props;
 	import Plyr from 'plyr';
 	import 'plyr/dist/plyr.css';
 
-	const plyrEl = document.getElementById('plyr');
-	const player = new Plyr(plyrEl);
-	const source = plyrEl.dataset.plyrSource;
-	console.log(source);
-	player.source = JSON.parse(source);
+	const plyrEls = document.querySelectorAll('.plyr');
+	Plyr.setup(plyrEls).forEach((player, i) => {
+		const plyrEl = plyrEls[i] as HTMLElement;
+		player.source = JSON.parse(plyrEl.dataset.plyrSource);
+	});
 </script>
 <video
-	id="plyr"
+	class="plyr"
 	data-plyr-config={JSON.stringify(options)}
 	data-plyr-source={JSON.stringify(source)}
 	crossorigin={crossorigin}></video>

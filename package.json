@@ -8,6 +8,10 @@
     "name": "luoming",
     "url": "https://blog.luoming.space"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Liumingxun/astro-plyr"
+  },
   "exports": {
     ".": "./index.ts"
   },

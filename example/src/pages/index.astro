@@ -3,7 +3,7 @@ import type { Options, SourceInfo } from '~';
 import Layout from '../layouts/Layout.astro';
 import Component from '~';
 
-const source: SourceInfo = {
+const videoSource: SourceInfo = {
 	type: 'video',
 	title: 'Example title',
 	poster: 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg',
@@ -36,19 +36,38 @@ const source: SourceInfo = {
 	],
 };
 
+const audioSource: SourceInfo = {
+	type: 'audio',
+	title: 'Example title',
+	sources: [
+		{
+			src: 'https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3',
+			type: 'audio/mp3',
+		},
+		{
+			src: 'https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg',
+			type: 'audio/ogg',
+		},
+	],
+};
+
+const youtubeSource: SourceInfo = {
+	type: 'video',
+	sources: [
+		{
+			provider: 'youtube',
+			src: 'bTqVqk7FSmY',
+		},
+	],
+};
+
 const options: Options = {
 	debug: true,
+	// controls: ['play', 'current-time', 'volume', 'fullscreen'],
 };
 ---
 
-<Layout title="Welcome to Astro.">
-	<Component options={options} source={source} />
+<Layout title="233">
+	<Component options={options} source={videoSource} />
+	<Component options={options} source={audioSource} />
 </Layout>
-
-<style>
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-</style>
