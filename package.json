@@ -1,6 +1,6 @@
 {
   "name": "astro-plyr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plyr component for Astro",
   "type": "module",
   "author": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Liumingxun/astro-plyr"
+    "url": "git+https://github.com/Liumingxun/astro-plyr.git"
   },
   "exports": {
     ".": "./index.ts"
