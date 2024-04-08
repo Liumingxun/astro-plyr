@@ -14,8 +14,8 @@ devDependencies:
     specifier: ^8.4.6
     version: 8.56.6
   '@types/node':
-    specifier: ^18.7.18
-    version: 18.19.26
+    specifier: ^20.12.5
+    version: 20.12.5
   '@types/prettier':
     specifier: ^3.0.0
     version: 3.0.0
@@ -24,7 +24,7 @@ devDependencies:
     version: 7.5.0(eslint@8.57.0)(typescript@5.4.3)
   astro:
     specifier: ^4.5.12
-    version: 4.5.12(@types/node@18.19.26)(typescript@5.4.3)
+    version: 4.5.12(@types/node@20.12.5)(typescript@5.4.3)
   eslint:
     specifier: ^8.23.1
     version: 8.57.0
@@ -1066,8 +1066,8 @@ packages:
       '@types/unist': 2.0.10
     dev: true
 
-  /@types/node@18.19.26:
-    resolution: {integrity: sha512-+wiMJsIwLOYCvUqSdKTrfkS8mpTp+MPINe6+Np4TAGFWWRWiBQ5kSq9nZGCSPkzx9mvT+uEukzpX4MOSCydcvw==}
+  /@types/node@20.12.5:
+    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1284,7 +1284,7 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.5.12(@types/node@18.19.26)(typescript@5.4.3):
+  /astro@4.5.12(@types/node@20.12.5)(typescript@5.4.3):
     resolution: {integrity: sha512-xIJcFI2hbyV8+h5pWjL7SKD1jIP0K01fYVAH+gdAt0mJaXy+u8Mj+goD0cPlK6sEaykR+7zxQLYGKJ44U4qarg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1345,7 +1345,7 @@ packages:
       tsconfck: 3.0.3(typescript@5.4.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.7(@types/node@18.19.26)
+      vite: 5.2.7(@types/node@20.12.5)
       vitefu: 0.2.5(vite@5.2.7)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -4328,7 +4328,7 @@ packages:
       vfile-message: 4.0.2
     dev: true
 
-  /vite@5.2.7(@types/node@18.19.26):
+  /vite@5.2.7(@types/node@20.12.5):
     resolution: {integrity: sha512-k14PWOKLI6pMaSzAuGtT+Cf0YmIx12z9YGon39onaJNy8DLBfBJrzg9FQEmkAM5lpHBZs9wksWAsyF/HkpEwJA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4356,7 +4356,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.19.26
+      '@types/node': 20.12.5
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.2
@@ -4372,7 +4372,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.2.7(@types/node@18.19.26)
+      vite: 5.2.7(@types/node@20.12.5)
     dev: true
 
   /web-namespaces@2.0.1:
